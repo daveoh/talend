@@ -1,0 +1,33 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "PlaceOrder",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "paths" : {
+    "/order" : {
+      "summary" : "Place Order",
+      "description" : "Place Order within Cerillion",
+      "post" : {
+        "summary" : "Create Order",
+        "requestBody" : {
+          "description" : "Digital order json including quote",
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "description" : "Digital order json including quote"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  }
+}
